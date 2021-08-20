@@ -1,0 +1,24 @@
+default_maznet: &default_maznet
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  pool: 10
+  username: root
+  password:
+
+development:
+  <<: *default_maznet
+  port: 3306
+  host: mariadb
+  database: "maznet_development"
+  secure_auth: false
+
+production:
+  <<: *default_maznet
+  database: "maznet_production"
+
+test:
+  <<: *default_maznet
+  port: 3306
+  host: mariadb
+  database: "maznet_test"

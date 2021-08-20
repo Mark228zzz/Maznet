@@ -1,0 +1,35 @@
+version: '3.7'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: '2.7.2'
+        NODE_MAJOR: '15'
+        BUNDLE_VERSION: '2.2.1'
+    volumes:
+      - .:/app:cached
+      - bundle_path:/bundle
+    environment:
+      - BUNDLE_PATH=/bundle/vendor
+      - WEB_CONCURRENCY=1
+    depends_on:
+      - mariadb
+    command: bundle exec rails server -b 0.0.0.0
+    ports:
+      - 3000:3000
+
+  mariadb:
+    image: mariadb:10.2.22-bionic
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD="yes"
+      - MYSQL_DATABASE=maznet_development
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb:/var/lib/mysql
+
+volumes:
+  bundle_path:
+  mariadb:
