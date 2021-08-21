@@ -9,11 +9,17 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
-    <%= yield %>
+    <%= render 'layouts/sidebar' %>
+    <div class="home-section">
+      <%= render 'layouts/navbar' %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
