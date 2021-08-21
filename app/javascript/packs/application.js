@@ -53,5 +53,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
       closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
     }
   }
+
+  if (Boolean(localStorage.getItem('sidebar-toggle-collapsed'))) {
+    var body = document.getElementsByClassName('sidebar')[0];
+    body.className = body.className + ' open';
+  }
 });
 
