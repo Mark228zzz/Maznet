@@ -1,0 +1,35 @@
+<div>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Comments</h1>
+
+  <table class="table table-xxl align-middle table-bordered border-dark">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>User name</th>
+        <th colspan="4"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @comments.each do |comment| %>
+        <tr>
+          <td><%= comment.id %></td>
+          <td><%= comment.title %></td>
+          <td><%= comment.description %></td>
+          <td><%= comment.user_name %></td>
+          <td><%= button_to 'Show', comment, class: "comments-btn-show", method: :get %></td>
+          <td><%= button_to 'Edit', edit_comment_path(comment), class: "comments-btn-edit", method: :get %></td>
+          <td><%= button_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' }, class: "comments-btn-destroy" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= button_to 'New Comment', new_comment_path, class: "comments-btn-new-comment", method: :get %>
+</div>

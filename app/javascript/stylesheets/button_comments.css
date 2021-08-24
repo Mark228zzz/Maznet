@@ -1,0 +1,57 @@
+.comments-btn-show {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 17px;
+    border-color: rgb(0, 225, 255);
+    padding: 5.5px;
+    border-radius: 10px;
+}
+
+.comments-btn-edit {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 17px;
+    border-color: rgb(0, 225, 255);
+    padding: 5.5px;
+    border-radius: 10px;
+}
+
+.comments-btn-destroy {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 17px;
+    border-color: rgb(255, 0, 0);
+    padding: 5.5px;
+    border-radius: 10px;
+}
+
+.comments-btn-new-comment {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 17px;
+    border-color: rgb(25, 0, 255);
+    padding: 5.5px;
+    border-radius: 10px;
+}
+
+.comments-btn-create-comment {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 17px;
+    border-color: rgb(25, 0, 255);
+    padding: 5.5px;
+    border-radius: 10px;
+}
+
+.comments-btn-back {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    font-size: 17px;
+    border-color: rgb(0, 225, 255);
+    padding: 5.5px;
+    border-radius: 10px;
+}
+
+.test {
+    min-height: calc(100vh - 143px);
+}

@@ -1,0 +1,8 @@
+<div class="center">
+    <h1>New Comment</h1>
+
+    <%= render 'form', comment: @comment %>
+
+    <%= button_to 'Back', comments_path, class: "comments-btn-back", method: :get %>
+
+</div>

@@ -1,0 +1,73 @@
+.btn-show {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(0,4,47);
+    background: linear-gradient(0deg, rgb(1, 8, 88) 0%, rgba(0,77,255,1) 100%);
+    width: 3.5rem;
+    height: 2.3rem;
+    border-width: 2px;
+    border-color: rgb(104, 104, 104);
+    border-style: solid;
+}
+
+.btn-edit {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(0,4,47);
+    background: linear-gradient(0deg, rgb(1, 8, 88) 0%, rgba(0,77,255,1) 100%);
+    width: 3.5rem;
+    height: 2.3rem;
+    border-width: 2px;
+    border-color: rgb(104, 104, 104);
+    border-style: solid;
+    margin: 4px;
+}
+
+.btn-destroy {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(126,0,0);
+    background: linear-gradient(0deg, rgba(126,0,0,1) 0%, rgba(255,0,0,1) 100%);
+    width: 4.3rem;
+    height: 2.3rem;
+    border-width: 2px;
+    border-color: rgb(104, 104, 104);
+    border-style: solid;
+}
+
+.btn-new-article {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(1,152,0);
+    background: linear-gradient(305deg, rgb(0, 133, 0) 0%, rgb(0, 255, 76)100%);
+    width: 6rem;
+    height: 2.3rem;
+    border-width: 2px;
+    border-color: rgb(104, 104, 104);
+    border-style: solid;
+}
+
+.btn-back {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(0,4,47);
+    background: linear-gradient(0deg, rgb(1, 8, 88) 0%, rgba(0,77,255,1) 100%);
+    width: 3.5rem;
+    height: 2.3rem;
+    border-width: 2px;
+    border-color: rgb(104, 104, 104);
+    border-style: solid;
+}
+
+.btn-create-article {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(1,152,0);
+    background: linear-gradient(305deg, rgb(0, 255, 76) 0%, rgb(14, 168, 0)100%);
+    width: 7.5rem;
+    height: 2.3rem;
+    border-width: 2px;
+    border-color: rgb(104, 104, 104);
+    border-style: solid;
+    margin: 4px;
+}

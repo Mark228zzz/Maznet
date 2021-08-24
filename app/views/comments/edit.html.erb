@@ -1,0 +1,9 @@
+<div class="center">
+    <h1>Editing Comment</h1>
+
+    <%= render 'form', comment: @comment %>
+
+    <%= button_to 'Show', @comment, class: "comments-btn-show", method: :get %>
+    <%= button_to 'Back', comments_path, class: "comments-btn-back", method: :get %>
+
+</div>

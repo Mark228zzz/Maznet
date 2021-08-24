@@ -249,3 +249,76 @@
     display: none;
   }
 }
+
+.green-color {
+  color: rgb(9, 255, 0);
+}
+
+.white-color {
+  color: white;
+}
+
+.size-20px {
+  font-size: 20px;
+}
+
+.my-table {
+  border-width: 3px !important;
+  border-style: solid;
+}
+
+.textarea-body {
+  width: 40rem;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(100, 100, 100);
+  padding: 4px;
+}
+
+.input-title {
+  width: 40rem;
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 40px;
+  border-color: rgb(100, 100, 100);
+  padding: 4px;
+}
+
+.container-footer {
+  width: auto;
+  height: 100px;
+  padding: 5px;
+  margin: 15px;
+  background-color: #11101d;
+  text-align: center;
+}
+
+.comments-input-title {
+  width: 45rem;
+  border-width: 1.9px;
+  border-color: #1d1b31;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.comments-text_area-description {
+  width: 45rem;
+  border-width: 1.9px;
+  border-color: #1d1b31;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.comments-input-user_name {
+  width: 45rem;
+  border-width: 1.9px;
+  border-color: #1d1b31;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.center {
+  text-align: center;
+}
+

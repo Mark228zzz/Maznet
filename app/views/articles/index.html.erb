@@ -1,29 +1,33 @@
-<p id="notice"><%= notice %></p>
+<div class="card-index-page motion-left">
+  <p id="notice"><%= notice %></p>
 
-<h1>Articles</h1>
+  <h1 class="white-color">Articles</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @articles.each do |article| %>
+  <table class="table table-bordered border-secondary my-table">
+    <thead>
       <tr>
-        <td><%= article.title %></td>
-        <td><%= article.body %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th class="white-color">ID</th>
+        <th class="white-color">Title</th>
+        <th class="white-color">Body</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @articles.each do |article| %>
+        <tr>
+          <td class="white-color"><%= article.id %></td>
+          <td class="white-color"><%= article.title %></td>
+          <td class="white-color"><%= article.body %></td>
+          <td><%= button_to 'Show', article, class: "btn-show", method: :get %></td>
+          <td><%= button_to 'Edit', edit_article_path(article), class: "btn-edit", method: :get %></td>
+          <td><%= button_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-destroy" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Article', new_article_path %>
+  <br>
+
+  <%= button_to 'New Article', new_article_path, class: "btn-new-article", method: :get %>
+</div>

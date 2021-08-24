@@ -1,14 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="card-show-page motion-left">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+  <p>
+    <strong class="white-color size-20px">ID:</strong>
+    <div class="white-color size-20px">
+      <%= @article.id %>
+    </div>
+  </p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @article.body %>
-</p>
+  <p>
+    <strong class="white-color size-20px">Title:</strong>
+    <div class="white-color size-20px">
+      <%= @article.title %>
+    </div>
+  </p>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+  <p>
+    <strong class="white-color size-20px">Body:</strong>
+    <div class="white-color size-20px">
+      <%= @article.body %>
+    </div>
+  </p>
+
+  <%= button_to 'Edit', edit_article_path(@article), class: "btn-edit", method: :get %> 
+  <%= button_to 'Back', articles_path, class: "btn-back", method: :get %>
+
+</div>
